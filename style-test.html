@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Style test</title>
+	<style type="text/css">
+		On va y écrire tout ce qui se trouve actuellement dans le fichier test css sauf qu'on va utiliser un lien maintenant pour ne pas devoir passer à travers tout le styl
+	</style>
+	<link rel="stylesheet" type="text/css" href="css/test.css">
+
+	<!-- ceci est un ruleset, entre les accolades on retrouve notre "declaration block" dont chaque ligne est un déclaration avec une declaration poroperty et une value-->
+	<!-- si deux styles ont la même spécificité en ruleset alors celui qui a été écrit en dernier à la priorité-->
+	<!-- les points comme p.ex. .big s'appelent des selectors-->
+	<!-- h1 span veut dire "tous les éléments h1 qui se trouvent dans span"-->
+</head>
+<body>
+	On retrouve juste en dessous les deux premiers test de couleurs :
+	<span>Span element</span>
+	<h1 style="font-size: 30px; color: #FDD831;">Test 1</h1> <!-- ici on utilise la valeur hexadécimale de la couleur-->
+	<h1 style="font-size: 30px; color: salmon">Test 2</h1> <br><!-- ici on utilise le nom de couleurs pré-enregistrées-->
+	<!-- on peut également, au lieu de répéter à chaque fois toutes ces lignes de code (p.ex. style ="font-size: 20px; color: hotpink), appelé inline styline on peut passer au ruleset styling. On va rajouter un style element dans le head-->
+	
+	<h1 class="uppercase"><span>Heading 1</span> - 1</h1> <!-- on utilise ici un span pour que notre heading soit différent-->
+	<h1 class="big">Heading 1 - 2</h1>
+	<h1>Heading 1 - 3</h1><br>
+	<h2 class="big uppercase">Heading 2 - 1</h2>
+	<!-- ici on a la priorité de la couleur hotpink bien que l'on ait spécifié dans le ruleset qu'on voulait une couleur red pour les h2, le style le plus spécifique va avoir la priorité-->
+	<!-- le seul que l'on a en navy parce que c'est le seul élément à avoir big et uppercase comme class-->
+	<h2 class="uppercase" style="color: hotpink"> Heading 2 - 2</h2>
+	<h2 class="big"> Heading 2 - 3</h2>
+</body>
+</html>
