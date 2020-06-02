@@ -1,0 +1,75 @@
+body{
+	margin: 0;
+	font-family: American Typewriter, Helvetica, Arial, Sans-serif;
+	font-size: 20px;
+	line-height: 25px;
+}
+
+header{
+	background-color: oldlace;
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+header h1{
+	color: black;
+	font-size: 50px;
+}
+
+h1, h2{
+	font-family: 'Comfortaa', cursive;
+}
+
+header img{
+	border-radius: 200px;
+	border: 20px solid dimgrey;
+}
+
+main{
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 20px;
+	/* padding with 4 values = top right bottom left
+		padding with 3 values = top RL bottom
+		padding with 2 values = top/bottom and RL*/
+}
+
+main img{
+	max-width: 100%;
+}
+
+h2{
+	font-size: 30px;
+	color: oldlace;
+	background-color: black;
+	border-radius: 100px;
+	text-align: center;
+	margin-top: 60px;
+}
+
+footer{
+	font-size: 15px;
+	text-align: center;
+	background-color: oldlace;
+	padding: 50px;
+}
+
+footer p{
+	margin:0;
+}
+
+a{
+	color:black;
+}
+
+a:hover{
+	color:red;
+}
+
+p.caption{
+	margin-top: -10px;
+	font-size: 15px;
+	color:#999999;
+	font-style: italic;
+}
